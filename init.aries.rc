@@ -46,7 +46,9 @@ on init
     setprop persist.radio.custom_ecc_hard "911,*911,#911,112,999,000,08,118,120,122,110,119,995,111,113,125,127,133"
 
 on fs
-    mount_all ./fstab.aries
+    start dualboot_init
+    wait ./fstab.aries.patched
+    mount_all ./fstab.aries.patched
     setprop ro.crypto.fuse_sdcard true
     write /sys/kernel/boot_adsp/boot 1
 
@@ -415,3 +417,8 @@ service diag_mdlog /system/bin/logwrapper /system/bin/diag_mdlog -s 100
 
 # on property:gsm.sim.state=READY
 #    start diag_mdlog
+
+service dualboot_init /sbin/dualboot_init /fstab.aries
+    class main
+    disabled
+    oneshot
