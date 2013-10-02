@@ -135,6 +135,8 @@ PRODUCT_COPY_FILES := \
     vendor/qcom/aries/proprietary/libqmiservices.so:system/lib/libqmiservices.so:qcom \
     vendor/qcom/aries/proprietary/libril-qc-qmi-1.so:system/lib/libril-qc-qmi-1.so:qcom \
     vendor/qcom/aries/proprietary/libril-qcril-hook-oem.so:system/lib/libril-qcril-hook-oem.so:qcom \
+    vendor/qcom/aries/proprietary/libqminvapi.so:system/lib/libqminvapi.so:qcom \
+    vendor/qcom/aries/proprietary/libqminvapi.so:obj/lib/libqminvapi.so:qcom \
     vendor/qcom/aries/proprietary/libsc-a3xx.so:system/lib/libsc-a3xx.so:qcom \
     vendor/qcom/aries/proprietary/libsensor1.so:system/lib/libsensor1.so:qcom \
     vendor/qcom/aries/proprietary/libsensor_reg.so:system/lib/libsensor_reg.so:qcom \

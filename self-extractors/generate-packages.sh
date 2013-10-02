@@ -190,6 +190,7 @@ do
             system/lib/libqmiservices.so \
             system/lib/libril-qc-qmi-1.so \
             system/lib/libril-qcril-hook-oem.so \
+            system/lib/libqminvapi.so \
             system/lib/libsc-a3xx.so \
             system/lib/libsensor1.so \
             system/lib/libsensor_reg.so \
