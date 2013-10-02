@@ -24,6 +24,10 @@ then
   ZIP=occam-ota-573038.zip
   BUILD=jdq39
 fi # jb-mr1.1-dev
+if test -n "$1"
+then
+	ZIP="$1"
+fi
 ROOTDEVICE=aries
 DEVICE=aries
 MANUFACTURER=xiaomi
