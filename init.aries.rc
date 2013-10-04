@@ -215,6 +215,7 @@ on post-fs-data
     # communicate with mpdecision and thermald
     mkdir /dev/socket/mpdecision 0770 system system
     chmod 2770 /dev/socket/mpdecision
+    symlink /dev/socket/mpdecision/touchboost /dev/socket/pb
 
     # adjust vibrator amplitude
     write /sys/class/timed_output/vibrator/amp 70
